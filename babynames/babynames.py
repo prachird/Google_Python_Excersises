@@ -55,8 +55,8 @@ def extract_names(filename):
 #      for match in matches:
 #          names_dict.update({match.group(2):match.group(3)})
       for match in matches:
-          final_list.append(match.group(2) +  match.group(1))
-          final_list.append(match.group(3) +  match.group(1))
+          final_list.append(match.group(2) + " " + match.group(1))
+          final_list.append(match.group(3) + " " + match.group(1))
           
       final_list.sort()
       print(final_list)
